@@ -16,7 +16,6 @@ CREATE TABLE Department (
 CREATE TABLE Role (
   
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    movie_id INT, 
     title   VARCHAR(30),
     salary  DECIMAL,
     department_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,

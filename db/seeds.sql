@@ -1,12 +1,9 @@
 INSERT INTO Department (id, name)
-VALUES (),
-(),
-(),
-(),
-(),
-();
+VALUES (Front of house),
+(Back of house)
+(Management);
 
-INSERT INTO Role (id, movie_id, title, salary, department_id)
+INSERT INTO Role (id, title, salary, department_id)
 VALUES (),
 (),
 (),
