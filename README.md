@@ -9,9 +9,20 @@ THEN I am presented with the following options: view all departments, view all r
 
 The schema will have the employee tracker database, created, saved, used and selected. 
 It will then have the following tables: 
-departments: 
-roles: 
-employees:
+department: 
+    id   INT
+    Name  VARCHAR(30)
+role:
+    id    INT
+    title   VARCHAR(30)
+    salary  DECIMAL
+    department_id   INT
+employee:
+    id      INT
+    first_name      VARCHAR(30)
+    last_name       VARCHAR(30)
+    role_id         INT
+    manager_id      INT
 
 
 WHEN I choose to view all departments
