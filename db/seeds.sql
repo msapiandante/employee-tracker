@@ -26,7 +26,3 @@ VALUES ('Jeanne', 'French', 1, NULL),
        ('Cody', 'Brown', 8, 2),
        ('Sara', 'Lopez', 9, 2),
        ('Kyle', 'Daniels', 10, 2);
-       
-       SELECT * FROM Department;
-       SELECT * FROM Role; 
-       SELECT * FROM Employee;
