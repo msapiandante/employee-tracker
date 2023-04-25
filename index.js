@@ -56,7 +56,7 @@ function selectAction() {
         updateEmployeeRole();
         break;
       case 'Exit':
-        console.log('Goodbye!');
+        console.log('OK, bye!');
         connection.end();
         break;
       default:
