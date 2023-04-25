@@ -1,47 +1,38 @@
 # employee-tracker
+## Description
 
-pseudocode: 
-
-GIVEN a command-line application that accepts user input
-WHEN I start the application - To start the application i will run index.js. 
-After i run index.js I will be presented with the following options: 
-THEN I am presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role. 
-
-The schema will have the employee tracker database, created, saved, used and selected. 
-It will then have the following tables: 
-department: 
-    id   INT
-    Name  VARCHAR(30)
-role:
-    id    INT
-    title   VARCHAR(30)
-    salary  DECIMAL
-    department_id   INT
-employee:
-    id      INT
-    first_name      VARCHAR(30)
-    last_name       VARCHAR(30)
-    role_id         INT
-    manager_id      INT
+I was tasked with creating a command-line application that would allow an employer to view and edit a database that displayed various data about a company, such as departments, managers and salaries- just to name a few. I learned how to use mysql. I also further developed my knoweldge of working node.js. I enjoyed this project, I am still in the process of debugging the "add a role", "add an employee", "update employee role" functions. I look forward to continue learning and building my skill set. Mysql syntax has been my favorite so far! 
 
 
-WHEN I choose to view all departments
-THEN I am presented with a formatted table showing department names and department ids
+## Credits
+https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+W3schools 
+Both my mother Lani and mother in law Mayette, helping babysit my kid so I could go back to school full-time and change careers. 
 
-WHEN I choose to view all roles
-THEN I am presented with the job title, role id, the department that role belongs to, and the salary for that role
+## License
 
-WHEN I choose to view all employees
-THEN I am presented with a formatted table showing employee data, including employee ids, first names, last names, job titles, departments, salaries, and managers that the employees report to
+MIT License
 
-WHEN I choose to add a department
-THEN I am prompted to enter the name of the department and that department is added to the database
+Copyright (c) 2023 msapiandante
 
-WHEN I choose to add a role
-THEN I am prompted to enter the name, salary, and department for the role and that role is added to the database
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-WHEN I choose to add an employee
-THEN I am prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-WHEN I choose to update an employee role
-THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+## Tests
+Video demo link : https://drive.google.com/file/d/1sizBIqleSJjdzydsvGdCqq5PzkwWDZxh/view

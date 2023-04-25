@@ -125,14 +125,38 @@ function addDepartment() {
 }
 
 // Add a role
-function addRole() {
-  connection.query(
-    'SELECT * FROM role',
-    function(err, departments) {
-      if (err) throw err;
-      console.log(`${answer.name} role added!\n`);
-        selectAction();
-      }
-    );
-  };
+  function addRole() {
+    inquirer.prompt({
+      name: 'name',
+      type: 'input',
+      message: 'What is the name of the role?'
+    }).then(answer => {
+      connection.query(
+        'INSERT INTO role SET ?',
+        { name: answer.name },
+        function(err, res) {
+          if (err) throw err;
+          console.log(`${answer.name} role added!\n`);
+          selectAction();
+        }
+      );
+    });
+  }
+  function addEmployee() {
+    inquirer.prompt({
+      name: 'name',
+      type: 'input',
+      message: 'What is the first_name and last_name?'
+    }).then(answer => {
+      connection.query(
+        'INSERT INTO employee SET ?',
+        { name: answer.name },
+        function(err, res) {
+          if (err) throw err;
+          console.log(`${answer.name} employee added!\n`);
+          selectAction();
+        }
+      );
+    });
+  }
   startEMS();
